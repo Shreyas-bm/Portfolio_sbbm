@@ -1,119 +1,160 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // ==========================================================================
-    // 1. FAQ ACCORDION COLLAPSE/EXPAND
-    // ==========================================================================
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-        const btn = item.querySelector('.faq-question-btn');
-        const answer = item.querySelector('.faq-answer');
-        
-        btn.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // Close all other FAQ items first for accordion effect
-            faqItems.forEach(otherItem => {
-                otherItem.classList.remove('active');
-                otherItem.querySelector('.faq-answer').style.maxHeight = null;
-            });
-            
-            // If the item clicked wasn't already active, open it
-            if (!isActive) {
-                item.classList.add('active');
-                // Set max-height to its scrollHeight for smooth CSS transition
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
-        });
+// DARK MODE
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+
+    const savedTheme = localStorage.getItem("john-theme");
+
+    if (savedTheme) {
+      root.dataset.theme = savedTheme;
+    }
+
+    themeToggle.textContent =
+      root.dataset.theme === "dark" ? "☀" : "☾";
+
+    themeToggle.addEventListener("click", () => {
+      const dark = root.dataset.theme === "dark";
+
+      root.dataset.theme = dark ? "light" : "dark";
+      themeToggle.textContent = dark ? "☾" : "☀";
+
+      localStorage.setItem(
+        "john-theme",
+        dark ? "light" : "dark"
+      );
     });
 
-    // ==========================================================================
-    // 2. SCROLL-SPY ACTIVE NAVIGATION HIGH-LIGHTING
-    // ==========================================================================
-    const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    const updateActiveNavLink = () => {
-        let currentSectionId = '';
-        const scrollPosition = window.scrollY + window.innerHeight * 0.35; // offset for center focus
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                currentSectionId = section.getAttribute('id');
-            }
-        });
-        
-        // If we scroll to the very bottom, highlight contact
-        if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50) {
-            currentSectionId = 'contact';
-        }
-        
-        if (currentSectionId) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${currentSectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-    };
-    
-    window.addEventListener('scroll', updateActiveNavLink);
-    // Trigger once on load to highlight the initially loaded section
-    updateActiveNavLink();
+    // MOBILE MENU
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-    // ==========================================================================
-    // 3. SMOOTH SCROLLING FOR ALL ANCHOR LINKS
-    // ==========================================================================
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
-    anchorLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const targetId = link.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                e.preventDefault();
-                
-                // Offset calculation (accounts for floating navbar pill height + padding)
-                const offset = window.innerWidth <= 1024 ? 90 : 120;
-                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                const offsetPosition = elementPosition - offset;
-                
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
     });
 
-    // ==========================================================================
-    // 4. INTERSECTION OBSERVER SCROLL REVEAL ANIMATIONS
-    // ==========================================================================
-    const revealElements = document.querySelectorAll('.reveal');
-    
-    const revealCallback = (entries, observer) => {
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+      });
+    });
+
+    // ACTIVE NAVIGATION
+    const sections = document.querySelectorAll("main section[id]");
+    const links = document.querySelectorAll(".nav-links a");
+
+    const navObserver = new IntersectionObserver(
+      entries => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Stop observing once revealed
-            }
+          if (entry.isIntersecting) {
+            links.forEach(link => {
+              link.classList.toggle(
+                "active",
+                link.getAttribute("href") === "#" + entry.target.id
+              );
+            });
+          }
         });
-    };
-    
-    const revealOptions = {
-        threshold: 0.05, // triggers when 5% of the element is visible
-        rootMargin: '0px 0px -60px 0px'
-    };
-    
-    const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
-    
-    revealElements.forEach(element => {
-        // Pre-add the reveal styling class if not present
-        revealObserver.observe(element);
+      },
+      {
+        rootMargin: "-35% 0px -55% 0px"
+      }
+    );
+
+    sections.forEach(section => navObserver.observe(section));
+
+    // SCROLL REVEAL
+    const revealObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    document
+      .querySelectorAll(".reveal")
+      .forEach(element => revealObserver.observe(element));
+
+    // PROJECT FILTERS
+    const filters = document.querySelectorAll(".filter");
+    const projects = document.querySelectorAll(".project");
+
+    filters.forEach(filter => {
+      filter.addEventListener("click", () => {
+
+        filters.forEach(f => f.classList.remove("active"));
+        filter.classList.add("active");
+
+        const value = filter.dataset.filter;
+
+        projects.forEach(project => {
+          if (
+            value === "all" ||
+            project.dataset.category === value
+          ) {
+            project.style.display = "";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
     });
-});
+
+    // TOAST
+    const toast = document.getElementById("toast");
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2600);
+    }
+
+    document.querySelectorAll("[data-demo]").forEach(link => {
+      link.addEventListener("click", () => {
+        showToast(
+          `${link.dataset.demo} is a portfolio demo placeholder.`
+        );
+      });
+    });
+
+    // CONTACT FORM
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", event => {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const email =
+          document.getElementById("email").value.trim();
+
+        const subject =
+          document.getElementById("subject").value.trim();
+
+        const message =
+          document.getElementById("message").value.trim();
+
+        const body =
+          `Hi Shreyas,\n\n${message}\n\nFrom: ${name} (${email})`;
+
+        window.location.href =
+          `mailto:shreyasbm2k5@gmail.com` +
+          `?subject=${encodeURIComponent(subject)}` +
+          `&body=${encodeURIComponent(body)}`;
+
+        showToast("Opening your email client...");
+      });
+
+    // CURRENT YEAR
+    document.getElementById("year").textContent =
+      new Date().getFullYear();

@@ -1,369 +1,143 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyas Bharadwaj B M | Gen AI Developer</title>
-    <meta name="description"
-        content="Portfolio of Shreyas Bharadwaj B M, a final-year AI & Machine Learning student building Generative AI products — RAG pipelines, LLM API integration, and full-stack applications.">
-
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts: Inter & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio of Shreyas Bharadwaj B M, a final-year AI &amp; Machine Learning student building Generative AI products." name="description"/>
+<title>Shreyas Bharadwaj B M — Gen AI Developer</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <!-- Background Mesh Gradient -->
-    <div class="bg-gradient-mesh"></div>
-
-    <div class="app-container">
-        <!-- Sidebar / Profile Card (Left on Desktop, Bottom on Mobile) -->
-        <aside class="sidebar reveal">
-            <div class="profile-card">
-                <div class="avatar-wrapper">
-                    <img src="assets/avatar.png" alt="Shreyas Bharadwaj B M">
-                </div>
-                <h2 class="profile-name">Shreyas Bharadwaj</h2>
-                <p class="profile-title">Gen AI Developer &bull; AI & ML Engineer</p>
-                <div class="profile-location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Karnataka, India</span>
-                </div>
-                <div class="social-links">
-                    <a href="mailto:shreyasbm2k5@gmail.com" class="social-btn" title="Email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a href="tel:+916361778392" class="social-btn" title="Phone">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
-                    <a href="https://github.com/Shreyas-bm" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shreyas-bharadwaj-b-m-256595249" target="_blank"
-                        rel="noopener noreferrer" class="social-btn" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <a href="#contact" class="lets-talk-btn">Let's Talk</a>
-            </div>
-        </aside>
-
-        <!-- Main Content Area (Right) -->
-        <main class="main-content">
-            <!-- Floating Navigation Pill -->
-            <div class="nav-pill-wrapper">
-                <nav class="nav-pill">
-                    <a href="#home" class="nav-link active">Home</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#tools" class="nav-link">Tools</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#thoughts" class="nav-link">Thoughts</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </nav>
-            </div>
-
-            <!-- Hero Intro Section -->
-            <section id="home" class="section reveal">
-                <div class="hero-intro">
-                    Final-year AI & ML undergraduate building <span>Generative AI products</span> — RAG pipelines,
-                    LLM API integration, and prompt engineering, shipped as full-stack apps with
-                    <span>Python/FastAPI</span> and <span>Next.js/React</span>.
-                </div>
-
-                <!-- Stats Grid -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">8.07</div>
-                        <div class="stat-label">CGPA B.E. AI & ML</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Projects Shipped</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">2</div>
-                        <div class="stat-label">Hackathons</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Grid Section -->
-            <section id="projects" class="section reveal">
-                <div class="section-header">
-                    <h2 class="section-title">Recent Projects & <span>Achievements</span></h2>
-                    <p class="section-subtitle">A curated collection of my work in AI, ML, and Software Engineering</p>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- Project: StoryVoiceAI -->
-                    <a href="https://github.com/Shreyas-bm/StoryVoiceAI" target="_blank" rel="noopener noreferrer" class="project-card">
-                        <div class="project-thumbnail storyvoice">
-                            <div class="project-icon-overlay">
-                                <i class="fa-solid fa-book-open"></i>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-tags">
-                                <span class="project-tag">Next.js</span>
-                                <span class="project-tag">FastAPI</span>
-                                <span class="project-tag">NLP</span>
-                            </div>
-                            <h3 class="project-card-title">StoryVoiceAI</h3>
-                            <p class="project-card-desc">Offline-first storytelling and audiobook generator. Custom
-                                NLP pipeline segments dialogue from narration and classifies emotion, paired with a
-                                hybrid offline TTS + procedural chiptune engine for distinct character voices.</p>
-                        </div>
-                    </a>
-
-                    <!-- Project: SmartPDF AI -->
-                    <a href="https://github.com/Shreyas-bm/Smart-pdf-AI" target="_blank" rel="noopener noreferrer" class="project-card">
-                        <div class="project-thumbnail chatbot">
-                            <div class="project-icon-overlay">
-                                <i class="fa-solid fa-file-pdf"></i>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-tags">
-                                <span class="project-tag">RAG</span>
-                                <span class="project-tag">LlamaIndex</span>
-                                <span class="project-tag">Next.js 15</span>
-                            </div>
-                            <h3 class="project-card-title">SmartPDF AI</h3>
-                            <p class="project-card-desc">Privacy-focused, fully on-device study assistant generating
-                                summaries, quizzes, and flashcards from PDF/DOCX. RAG pipeline with local
-                                bge-large-en-v1.5 embeddings, SSE streaming, and citations synced to a PDF.js viewer.</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Tools Section -->
-            <section id="tools" class="section reveal">
-                <div class="section-header">
-                    <h2 class="section-title">My <span>Tools</span> & Stack</h2>
-                    <p class="section-subtitle">The software, frameworks, and tools I use to bring ideas to life</p>
-                </div>
-
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <i class="fa-brands fa-python tool-icon"></i>
-                        <span class="tool-name">Python</span>
-                        <span class="tool-type">Language</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-wand-magic-sparkles tool-icon"></i>
-                        <span class="tool-name">Prompt Engineering</span>
-                        <span class="tool-type">GenAI / LLMs</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-diagram-project tool-icon"></i>
-                        <span class="tool-name">RAG</span>
-                        <span class="tool-type">GenAI / LLMs</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-vector-square tool-icon"></i>
-                        <span class="tool-name">ChromaDB / FAISS</span>
-                        <span class="tool-type">Vector DB</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-bolt tool-icon"></i>
-                        <span class="tool-name">FastAPI</span>
-                        <span class="tool-type">Backend</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-brands fa-node tool-icon"></i>
-                        <span class="tool-name">Node.js</span>
-                        <span class="tool-type">Backend</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-brain tool-icon"></i>
-                        <span class="tool-name">Hugging Face</span>
-                        <span class="tool-type">AI / ML</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-database tool-icon"></i>
-                        <span class="tool-name">PostgreSQL / SQL</span>
-                        <span class="tool-type">Database</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-brands fa-docker tool-icon"></i>
-                        <span class="tool-name">Docker</span>
-                        <span class="tool-type">DevOps</span>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-brands fa-git-alt tool-icon"></i>
-                        <span class="tool-name">Git & GitHub</span>
-                        <span class="tool-type">Version Control</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Education / Experience Section -->
-            <section id="experience" class="section reveal">
-                <div class="section-header">
-                    <h2 class="section-title">Education & <span>Journey</span></h2>
-                    <p class="section-subtitle">Academic timeline and milestones in Artificial Intelligence</p>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-card">
-                        <div class="timeline-info">
-                            <h3>Bachelor of Engineering</h3>
-                            <p class="timeline-institution">Bahubali College of Engineering, Shravanabelagola</p>
-                            <p class="timeline-details">Specialization: Artificial Intelligence & Machine Learning
-                                (AIML) &bull; CGPA: 8.07/10</p>
-                        </div>
-                        <span class="timeline-date">2023 - Present</span>
-                    </div>
-                    <div class="timeline-card">
-                        <div class="timeline-info">
-                            <h3>Class 12th (Pre-University College)</h3>
-                            <p class="timeline-institution">Karnataka State Board</p>
-                            <p class="timeline-details">Focus: Physics, Chemistry, Mathematics, Computer Science (PCMCs)
-                                &bull; Percentage: 85%</p>
-                        </div>
-                        <span class="timeline-date">2023</span>
-                    </div>
-
-                    <div class="timeline-card">
-                        <div class="timeline-info">
-                            <h3>Class 10th (Secondary School)</h3>
-                            <p class="timeline-institution">Karnataka State Board</p>
-                            <p class="timeline-details">Percentage: 93%</p>
-                        </div>
-                        <span class="timeline-date">2021</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Thoughts / Blog Section -->
-            <section id="thoughts" class="section reveal">
-                <div class="section-header">
-                    <h2 class="section-title">Thoughts & <span>Perspectives</span></h2>
-                    <p class="section-subtitle">Articles on technology, AI developments, and software architectures</p>
-                </div>
-
-                <div class="blog-grid">
-                    <a href="https://github.com/Shreyas-bm/SmartPDF-AI" target="_blank" rel="noopener noreferrer" class="blog-card">
-                        <div class="blog-meta">
-                            <span class="blog-tag">RAG</span>
-                            <span class="blog-date">Project Notes</span>
-                        </div>
-                        <h3 class="blog-title">Building a Fully On-Device RAG Pipeline</h3>
-                        <p class="blog-summary">Notes on chunking with LlamaIndex, indexing local bge-large-en-v1.5
-                            embeddings in SQLite, and streaming cited answers over SSE — all without a single
-                            external API call.</p>
-                    </a>
-
-                    <a href="https://github.com/Shreyas-bm/StoryVoiceAI" target="_blank" rel="noopener noreferrer" class="blog-card">
-                        <div class="blog-meta">
-                            <span class="blog-tag">NLP</span>
-                            <span class="blog-date">Project Notes</span>
-                        </div>
-                        <h3 class="blog-title">Segmenting Dialogue and Scoring Emotion, Offline</h3>
-                        <p class="blog-summary">How StoryVoiceAI splits narration from dialogue and classifies
-                            emotion using negation/intensifier scoring — then drives a hybrid TTS + chiptune engine
-                            for distinct character voices.</p>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Contact Section (FAQ + Collaboration) -->
-            <section id="contact" class="section reveal">
-                <!-- FAQ Accordion -->
-                <div class="section-header">
-                    <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
-                    <p class="section-subtitle">Answers to some of the common questions about my skillset and
-                        availability</p>
-                </div>
-
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <button class="faq-question-btn">
-                            <span>What services do you offer?</span>
-                            <i class="fa-solid fa-plus faq-icon"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>I specialize in Generative AI application development — RAG pipelines, LLM API
-                                integration, and prompt engineering — shipped as full-stack products with Python/FastAPI
-                                backends and Next.js/React frontends.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question-btn">
-                            <span>What is your typical development stack?</span>
-                            <i class="fa-solid fa-plus faq-icon"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>My core stack includes Python (FastAPI) and TypeScript (Next.js/React) for full-stack
-                                apps, vector databases like ChromaDB/FAISS for RAG, PostgreSQL/SQLite/MongoDB for data,
-                                and Docker for deployment.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question-btn">
-                            <span>Are you open to internships or freelance opportunities?</span>
-                            <i class="fa-solid fa-plus faq-icon"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, I am actively seeking Gen AI Developer / AI Developer roles, internships, and
-                                collaborative projects in Generative AI and Software Engineering.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question-btn">
-                            <span>Can you collaborate with existing developer teams?</span>
-                            <i class="fa-solid fa-plus faq-icon"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Absolutely. I am comfortable using Git for version control, writing clean and modular
-                                code, and coordinating on REST APIs and LLM-integrated backend architectures.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Let's Collaborate Banner -->
-                <div class="collaborate-card">
-                    <div class="collaborate-content">
-                        <h2 class="collaborate-title">Let's <span>collaborate</span></h2>
-                        <p class="collaborate-desc">Unlock the potential of your product with expert AI, ML, and
-                            software development services. Let’s collaborate to create user-centered solutions that not
-                            only meet your goals but also delight your users.</p>
-                    </div>
-                    <div class="collaborate-cta">
-                        <a href="mailto:shreyasbm2k5@gmail.com" class="collaborate-btn">
-                            <span>Let's Talk</span>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <p>&copy; 2026 Shreyas Bharadwaj B M. All rights reserved.</p>
-                <div class="footer-credits">
-                    <p>Designed inspired by Seera. Powered by HTML & CSS.</p>
-                </div>
-            </footer>
-        </main>
-    </div>
-
-    <!-- JavaScript Interactions -->
-    <script src="script.js"></script>
+<!-- NAVIGATION -->
+<header>
+<nav class="container">
+<a class="logo" href="#home">S<span>.</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="actions">
+<button aria-label="Toggle dark mode" class="icon-btn" id="themeToggle">☾</button>
+<button aria-label="Open navigation" class="menu-btn" id="menuToggle">☰</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="reveal">
+<div class="eyebrow">Gen AI Developer • AI &amp; ML Engineer</div>
+<h1>Hi, I'm <span>Shreyas.</span><br/>I build AI into reality.</h1>
+<p>Final-year AI &amp; ML undergraduate building Generative AI products — RAG pipelines, LLM API integration, and prompt engineering, shipped as full-stack apps with Python/FastAPI and Next.js/React.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="#projects">
+              View my work →
+            </a>
+<a class="btn btn-ghost" href="#contact">
+              Let's connect
+            </a>
+</div>
+</div>
+<div class="profile-card reveal">
+<div class="avatar"><img alt="Shreyas Bharadwaj B M" class="avatar-img" src="assets/avatar.png"/></div>
+<div class="profile-meta">
+<div class="status">● Open to opportunities</div>
+<div class="location">Karnataka, India</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SKILLS -->
+<section id="skills">
+<div class="container">
+<div class="section-head reveal">
+<h2>Skills</h2>
+<p>
+            A growing toolkit built through coursework, independent
+            learning, and hands-on projects.
+          </p>
+</div>
+<div class="skills-grid-new"><article class="card skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Languages</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">Python</div></div><div class="skill-item"><div class="skill-name">TypeScript / JavaScript</div></div><div class="skill-item"><div class="skill-name">Java / C++</div></div><div class="skill-item"><div class="skill-name">SQL</div></div></div></article><article class="card skill-card reveal"><div class="skill-icon">AI</div><h3>GenAI / LLMs</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">Prompt Engineering</div></div><div class="skill-item"><div class="skill-name">RAG Pipelines</div></div><div class="skill-item"><div class="skill-name">Vector DBs (Chroma, FAISS)</div></div><div class="skill-item"><div class="skill-name">Embeddings &amp; LLM APIs</div></div></div></article><article class="card skill-card reveal"><div class="skill-icon">ML</div><h3>AI &amp; Machine Learning</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">Scikit-learn / Pandas / NumPy</div></div><div class="skill-item"><div class="skill-name">TensorFlow / Keras</div></div><div class="skill-item"><div class="skill-name">Hugging Face / NLP</div></div></div></article><article class="card skill-card reveal"><div class="skill-icon">⚙</div><h3>Web &amp; Backend</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">FastAPI / Flask</div></div><div class="skill-item"><div class="skill-name">Next.js / React</div></div><div class="skill-item"><div class="skill-name">Node.js / REST APIs</div></div></div></article></div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+<div class="container">
+<div class="section-head reveal">
+<h2>Selected Projects</h2>
+<p>
+            A few examples of how I apply my skills to practical challenges.
+          </p>
+</div>
+<div class="filters reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="ai">AI / ML</button><button class="filter" data-filter="web">Web</button></div>
+<div class="project-grid"><article class="card project reveal" data-category="ai web"><div class="project-visual">01</div><div class="project-body"><h3>StoryVoiceAI</h3><p>Offline-first storytelling app with Next.js/FastAPI. Fine-tuned DistilRoBERTa for emotion classification.</p><div class="tag-row"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">NLP</span></div><div class="project-links"><a href="https://github.com/Shreyas-bm/StoryVoiceAI" rel="noopener noreferrer" target="_blank">View code ↗</a></div></div></article><article class="card project reveal" data-category="ai"><div class="project-visual">02</div><div class="project-body"><h3>SmartPDF AI</h3><p>Fully on-device study assistant generating summaries &amp; quizzes from PDFs. Custom RAG pipeline.</p><div class="tag-row"><span class="tag">RAG</span><span class="tag">LlamaIndex</span><span class="tag">Next.js</span></div><div class="project-links"><a href="https://github.com/Shreyas-bm/Smart-pdf-AI" rel="noopener noreferrer" target="_blank">View code ↗</a></div></div></article></div>
+</div>
+</section>
+<!-- RESUME -->
+<section id="resume">
+<div class="container">
+<div class="section-head reveal">
+<h2>Resume</h2>
+<p>
+            My academic journey, experience, and the milestones
+            shaping my next chapter.
+          </p>
+</div>
+<div class="resume-grid"><article class="card reveal"><h3>Education</h3><div class="timeline"><div class="timeline-item"><small>2023 — Present</small><h3>Bachelor of Engineering, AI &amp; ML</h3><p>Bahubali College of Engineering, Shravanabelagola. CGPA: 8.07/10</p></div><div class="timeline-item"><small>2023</small><h3>Class 12th (Pre-University College)</h3><p>Karnataka State Board. Focus: PCMCs. 85%</p></div><div class="timeline-item"><small>2021</small><h3>Class 10th (Secondary School)</h3><p>Karnataka State Board. 93%</p></div></div></article><article class="card reveal"><h3>Highlights</h3><div class="timeline"><div class="timeline-item"><small>2025</small><h3>Hackathon Participant</h3><p>Participated and built innovative AI solutions at BCE Shravanabelagola.</p></div><div class="timeline-item"><small>2025</small><h3>Teckathon Participant</h3><p>Competed in technical challenges at BGMIT Mudhol.</p></div></div><div class="resume-actions"><a class="btn btn-primary" download="" href="ShreyasRes.pdf">Download Resume ↓</a></div></article></div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-head reveal">
+<h2>Let's connect.</h2>
+<p>
+            Have a project idea, internship opportunity, or just want
+            to say hello? Send me a message.
+          </p>
+</div>
+<div class="contact-grid">
+<div class="contact-card reveal">
+<ul class="contact-list"><li><span>✉</span><div><strong>Email</strong><span>shreyasbm2k5@gmail.com</span></div></li><li><span>⌖</span><div><strong>Location</strong><span>Karnataka, India</span></div></li><li><span>in</span><div><strong>LinkedIn</strong><span>linkedin.com/in/shreyas-bharadwaj-b-m-256595249</span></div></li><li><span>⌘</span><div><strong>GitHub</strong><span>github.com/Shreyas-bm</span></div></li></ul>
+</div>
+<div class="contact-card reveal">
+<form id="contactForm">
+<div class="form-row">
+<input id="name" placeholder="Your name" required="" type="text"/>
+<input id="email" placeholder="Your email" required="" type="email"/>
+</div>
+<input id="subject" placeholder="Subject" required="" type="text"/>
+<textarea id="message" placeholder="Tell me a little about your message..." required=""></textarea>
+<button class="btn btn-primary" type="submit">
+                Send Message →
+              </button>
+<p class="form-note">
+                This demo form opens your email client; no information
+                is stored on this page.
+              </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+<div class="container footer-inner">
+<span>© <span id="year"></span> Shreyas Bharadwaj B M. Built with curiosity.</span>
+<div class="socials">
+<a href="https://github.com/Shreyas-bm" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/shreyas-bharadwaj-b-m-256595249" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a href="mailto:shreyasbm2k5@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<div id="toast"></div>
+<script defer="" src="script.js"></script>
 </body>
-
 </html>
