@@ -1,143 +1,280 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Portfolio of Shreyas Bharadwaj B M, a final-year AI &amp; Machine Learning student building Generative AI products." name="description"/>
-<title>Shreyas Bharadwaj B M — Gen AI Developer</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Portfolio of Shreyas Bharadwaj B M - AI/ML Engineer specializing in Generative AI, RAG pipelines, FastAPI backends, and Machine Learning systems." name="description"/>
+  <meta property="og:title" content="Shreyas Bharadwaj B M — AI/ML Engineer &amp; GenAI Developer"/>
+  <meta property="og:description" content="AI/ML Engineer with practical experience in developing backend APIs, RAG pipelines, and generative AI apps in Python."/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Shreyas Bharadwaj B M — AI/ML Engineer"/>
+  <meta name="twitter:description" content="AI/ML Engineer with experience in FastAPI, RAG pipelines, LLM APIs, and fine-tuning models."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>"/>
+  <title>Shreyas Bharadwaj B M — AI/ML Engineer &amp; GenAI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- NAVIGATION -->
-<header>
-<nav class="container">
-<a class="logo" href="#home">S<span>.</span></a>
-<ul class="nav-links" id="navLinks">
-<li><a class="active" href="#home">Home</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#resume">Resume</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="actions">
-<button aria-label="Toggle dark mode" class="icon-btn" id="themeToggle">☾</button>
-<button aria-label="Open navigation" class="menu-btn" id="menuToggle">☰</button>
-</div>
-</nav>
-</header>
-<main>
-<!-- HERO -->
-<section class="hero" id="home">
-<div class="container hero-grid">
-<div class="reveal">
-<div class="eyebrow">Gen AI Developer • AI &amp; ML Engineer</div>
-<h1>Hi, I'm <span>Shreyas.</span><br/>I build AI into reality.</h1>
-<p>Final-year AI &amp; ML undergraduate building Generative AI products — RAG pipelines, LLM API integration, and prompt engineering, shipped as full-stack apps with Python/FastAPI and Next.js/React.</p>
-<div class="cta-row">
-<a class="btn btn-primary" href="#projects">
-              View my work →
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Shreyas<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#resume">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <button aria-label="Toggle dark mode" class="icon-btn" id="themeToggle"></button>
+        <button aria-label="Open navigation menu" aria-expanded="false" class="menu-btn" id="menuToggle"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">AI/ML Engineer • Generative AI &amp; Backend Developer</div>
+          <h1>Hi, I'm <span>Shreyas.</span><br/>Engineering Intelligence with Code.</h1>
+          <p class="lead">
+            An AI/ML Engineer with practical experience in developing backend APIs and generative AI apps in Python. Proficient in building and shipping production-grade machine learning models and solutions with a good understanding of the underlying mathematical concepts. Experienced with FastAPI and RAG pipelines for developing prototype applications.
+          </p>
+          <div class="hero-badges" id="heroBadges">
+            <!-- Dynamic Badges Hydrated by JS -->
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">
+              Explore Projects →
             </a>
-<a class="btn btn-ghost" href="#contact">
-              Let's connect
+            <a class="btn btn-ghost" href="#contact">
+              Let's Connect
             </a>
-</div>
-</div>
-<div class="profile-card reveal">
-<div class="avatar"><img alt="Shreyas Bharadwaj B M" class="avatar-img" src="assets/avatar.png"/></div>
-<div class="profile-meta">
-<div class="status">● Open to opportunities</div>
-<div class="location">Karnataka, India</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SKILLS -->
-<section id="skills">
-<div class="container">
-<div class="section-head reveal">
-<h2>Skills</h2>
-<p>
-            A growing toolkit built through coursework, independent
-            learning, and hands-on projects.
-          </p>
-</div>
-<div class="skills-grid-new"><article class="card skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Languages</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">Python</div></div><div class="skill-item"><div class="skill-name">TypeScript / JavaScript</div></div><div class="skill-item"><div class="skill-name">Java / C++</div></div><div class="skill-item"><div class="skill-name">SQL</div></div></div></article><article class="card skill-card reveal"><div class="skill-icon">AI</div><h3>GenAI / LLMs</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">Prompt Engineering</div></div><div class="skill-item"><div class="skill-name">RAG Pipelines</div></div><div class="skill-item"><div class="skill-name">Vector DBs (Chroma, FAISS)</div></div><div class="skill-item"><div class="skill-name">Embeddings &amp; LLM APIs</div></div></div></article><article class="card skill-card reveal"><div class="skill-icon">ML</div><h3>AI &amp; Machine Learning</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">Scikit-learn / Pandas / NumPy</div></div><div class="skill-item"><div class="skill-name">TensorFlow / Keras</div></div><div class="skill-item"><div class="skill-name">Hugging Face / NLP</div></div></div></article><article class="card skill-card reveal"><div class="skill-icon">⚙</div><h3>Web &amp; Backend</h3><div class="skill-list"><div class="skill-item"><div class="skill-name">FastAPI / Flask</div></div><div class="skill-item"><div class="skill-name">Next.js / React</div></div><div class="skill-item"><div class="skill-name">Node.js / REST APIs</div></div></div></article></div>
-</div>
-</section>
-<!-- PROJECTS -->
-<section class="projects" id="projects">
-<div class="container">
-<div class="section-head reveal">
-<h2>Selected Projects</h2>
-<p>
-            A few examples of how I apply my skills to practical challenges.
-          </p>
-</div>
-<div class="filters reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="ai">AI / ML</button><button class="filter" data-filter="web">Web</button></div>
-<div class="project-grid"><article class="card project reveal" data-category="ai web"><div class="project-visual">01</div><div class="project-body"><h3>StoryVoiceAI</h3><p>Offline-first storytelling app with Next.js/FastAPI. Fine-tuned DistilRoBERTa for emotion classification.</p><div class="tag-row"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">NLP</span></div><div class="project-links"><a href="https://github.com/Shreyas-bm/StoryVoiceAI" rel="noopener noreferrer" target="_blank">View code ↗</a></div></div></article><article class="card project reveal" data-category="ai"><div class="project-visual">02</div><div class="project-body"><h3>SmartPDF AI</h3><p>Fully on-device study assistant generating summaries &amp; quizzes from PDFs. Custom RAG pipeline.</p><div class="tag-row"><span class="tag">RAG</span><span class="tag">LlamaIndex</span><span class="tag">Next.js</span></div><div class="project-links"><a href="https://github.com/Shreyas-bm/Smart-pdf-AI" rel="noopener noreferrer" target="_blank">View code ↗</a></div></div></article></div>
-</div>
-</section>
-<!-- RESUME -->
-<section id="resume">
-<div class="container">
-<div class="section-head reveal">
-<h2>Resume</h2>
-<p>
-            My academic journey, experience, and the milestones
-            shaping my next chapter.
-          </p>
-</div>
-<div class="resume-grid"><article class="card reveal"><h3>Education</h3><div class="timeline"><div class="timeline-item"><small>2023 — Present</small><h3>Bachelor of Engineering, AI &amp; ML</h3><p>Bahubali College of Engineering, Shravanabelagola. CGPA: 8.07/10</p></div><div class="timeline-item"><small>2023</small><h3>Class 12th (Pre-University College)</h3><p>Karnataka State Board. Focus: PCMCs. 85%</p></div><div class="timeline-item"><small>2021</small><h3>Class 10th (Secondary School)</h3><p>Karnataka State Board. 93%</p></div></div></article><article class="card reveal"><h3>Highlights</h3><div class="timeline"><div class="timeline-item"><small>2025</small><h3>Hackathon Participant</h3><p>Participated and built innovative AI solutions at BCE Shravanabelagola.</p></div><div class="timeline-item"><small>2025</small><h3>Teckathon Participant</h3><p>Competed in technical challenges at BGMIT Mudhol.</p></div></div><div class="resume-actions"><a class="btn btn-primary" download="" href="ShreyasRes.pdf">Download Resume ↓</a></div></article></div>
-</div>
-</section>
-<!-- CONTACT -->
-<section class="contact" id="contact">
-<div class="container">
-<div class="section-head reveal">
-<h2>Let's connect.</h2>
-<p>
-            Have a project idea, internship opportunity, or just want
-            to say hello? Send me a message.
-          </p>
-</div>
-<div class="contact-grid">
-<div class="contact-card reveal">
-<ul class="contact-list"><li><span>✉</span><div><strong>Email</strong><span>shreyasbm2k5@gmail.com</span></div></li><li><span>⌖</span><div><strong>Location</strong><span>Karnataka, India</span></div></li><li><span>in</span><div><strong>LinkedIn</strong><span>linkedin.com/in/shreyas-bharadwaj-b-m-256595249</span></div></li><li><span>⌘</span><div><strong>GitHub</strong><span>github.com/Shreyas-bm</span></div></li></ul>
-</div>
-<div class="contact-card reveal">
-<form id="contactForm">
-<div class="form-row">
-<input id="name" placeholder="Your name" required="" type="text"/>
-<input id="email" placeholder="Your email" required="" type="email"/>
-</div>
-<input id="subject" placeholder="Subject" required="" type="text"/>
-<textarea id="message" placeholder="Tell me a little about your message..." required=""></textarea>
-<button class="btn btn-primary" type="submit">
+          </div>
+        </div>
+
+        <div class="profile-card reveal">
+          <div class="avatar">
+            <img alt="Shreyas Bharadwaj B M" class="avatar-img" src="assets/avatar.png"/>
+          </div>
+          <div class="profile-meta">
+            <div class="status">
+              <span class="status-dot"></span>
+              <span>Open to opportunities</span>
+            </div>
+            <div class="location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Hassan, Karnataka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Work Experience</h2>
+            <p>Industry internship engineering real-world NLP and conversational AI solutions.</p>
+          </div>
+        </div>
+        <div class="experience-grid">
+          <article class="card reveal">
+            <div class="timeline" id="experienceContainer">
+              <!-- Dynamic Experience rendered by JS -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Featured Projects</h2>
+            <p>End-to-end Generative AI products, offline-first architectures, and retrieval-augmented systems.</p>
+          </div>
+        </div>
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all">All Projects</button>
+          <button class="filter" data-filter="ai">AI / GenAI</button>
+          <button class="filter" data-filter="web">Full-Stack / Web</button>
+        </div>
+        <div class="project-grid" id="projectsContainer">
+          <!-- Dynamic Projects rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Technical Skills</h2>
+            <p>Core competencies spanning generative AI architectures, ML frameworks, databases, and programming languages.</p>
+          </div>
+        </div>
+        <div class="skills-grid" id="skillsContainer">
+          <!-- Dynamic Skills rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS SECTION -->
+    <section class="publications-section" id="publications">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Publications &amp; Research</h2>
+            <p>Peer-reviewed scholarly contributions in Retrieval-Augmented Generation (RAG) and LLM hallucination mitigation.</p>
+          </div>
+        </div>
+        <div id="publicationsContainer">
+          <!-- Dynamic Publications rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & ACHIEVEMENTS SECTION -->
+    <section class="resume-section" id="resume">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Education &amp; Achievements</h2>
+            <p>Academic foundations, competitive hackathons, and technical honors.</p>
+          </div>
+        </div>
+        <div class="resume-grid">
+          <article class="card reveal">
+            <h3 class="card-subtitle">Education</h3>
+            <div class="timeline" id="educationContainer">
+              <!-- Dynamic Education rendered by JS -->
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card-subtitle">Key Achievements</h3>
+            <ul class="achievement-list" id="achievementsContainer">
+              <!-- Dynamic Achievements rendered by JS -->
+            </ul>
+            <div class="resume-actions">
+              <a class="btn btn-primary" download="" href="ShreyasRes.pdf">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Resume (PDF)
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Let's Connect</h2>
+            <p>Interested in AI/ML engineering roles, internships, or technical collaborations? Get in touch directly.</p>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:shreyasbm2k5@gmail.com">shreyasbm2k5@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+916361778392">+91 6361778392</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <span>Hassan, Karnataka, India</span>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/shreyas-bharadwaj-b-m-256595249/" rel="noopener noreferrer" target="_blank">linkedin.com/in/shreyas-bharadwaj-b-m-256595249</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </div>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/Shreyas-bm" rel="noopener noreferrer" target="_blank">github.com/Shreyas-bm</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card reveal">
+            <form id="contactForm">
+              <div class="form-row">
+                <input id="name" placeholder="Your Name" required="" type="text"/>
+                <input id="email" placeholder="Your Email" required="" type="email"/>
+              </div>
+              <input id="subject" placeholder="Subject / Project Inquiry" required="" type="text"/>
+              <textarea id="message" placeholder="Hi Shreyas, I'd like to discuss an opportunity or project..." required=""></textarea>
+              <button class="btn btn-primary" type="submit">
                 Send Message →
               </button>
-<p class="form-note">
-                This demo form opens your email client; no information
-                is stored on this page.
+              <p class="form-note">
+                Directly opens your default email client with your message pre-formatted.
               </p>
-</form>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- FOOTER -->
-<footer>
-<div class="container footer-inner">
-<span>© <span id="year"></span> Shreyas Bharadwaj B M. Built with curiosity.</span>
-<div class="socials">
-<a href="https://github.com/Shreyas-bm" rel="noopener noreferrer" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/shreyas-bharadwaj-b-m-256595249" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-<a href="mailto:shreyasbm2k5@gmail.com">Email</a>
-</div>
-</div>
-</footer>
-<div id="toast"></div>
-<script defer="" src="script.js"></script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Shreyas Bharadwaj B M. Built with precision and curiosity.</span>
+      <div class="socials">
+        <a href="https://github.com/Shreyas-bm" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/shreyas-bharadwaj-b-m-256595249/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:shreyasbm2k5@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+  <script defer="" src="script.js"></script>
 </body>
 </html>
