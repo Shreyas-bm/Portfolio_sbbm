@@ -148,6 +148,7 @@ const PORTFOLIO_DATA = {
       journal: "International Journal for Research in Applied Science & Engineering Technology (IJRASET)",
       date: "Aug. 2026",
       tag: "Journal Publication",
+      url: "https://www.ijraset.com/research-paper/large-language-models-hallucinate-and-how-retrieval-augmented-generation-mitigates",
       summary:
         "Comprehensive research analyzing the root causes of hallucinations in LLMs and establishing mitigation architectures via Retrieval-Augmented Generation (RAG), vector embeddings, and contextual grounding."
     }
@@ -358,15 +359,26 @@ function createPublicationCard(pub) {
   const card = document.createElement("article");
   card.className = "card publication-card reveal";
 
+  const linkHtml = pub.url
+    ? `<a href="${pub.url}" target="_blank" rel="noopener noreferrer" class="pub-link">
+        Read Paper ${getIconSvg("external", 14, 14)}
+       </a>`
+    : "";
+
+  const titleHtml = pub.url
+    ? `<a href="${pub.url}" target="_blank" rel="noopener noreferrer">${pub.title}</a>`
+    : pub.title;
+
   card.innerHTML = `
     <div class="pub-tag">
       ${getIconSvg("book", 16, 16)} ${pub.tag}
     </div>
-    <h3 class="publication-title">${pub.title}</h3>
+    <h3 class="publication-title">${titleHtml}</h3>
     <div class="publication-journal">${pub.journal}</div>
     <p class="timeline-desc">${pub.summary}</p>
     <div class="pub-footer">
       <span class="pub-date">Published: ${pub.date}</span>
+      ${linkHtml}
     </div>
   `;
   return card;

@@ -739,6 +739,15 @@ section {
   line-height: 1.35;
 }
 
+.publication-title a {
+  color: inherit;
+  transition: var(--transition);
+}
+
+.publication-title a:hover {
+  color: var(--primary);
+}
+
 .publication-journal {
   color: var(--muted);
   font-size: 0.94rem;
@@ -759,6 +768,26 @@ section {
   font-size: 0.86rem;
   color: var(--muted);
   font-weight: 600;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary);
+  font-size: 0.86rem;
+  font-weight: 750;
+  padding: 6px 14px;
+  background: var(--primary-light);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.pub-link:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 /* RESUME & EDUCATION */
